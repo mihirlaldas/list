@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TestHook = (props) => {
+const TestHook = (props: {changeName?: ()=>void, name?: string}) => {
   const [state, setState] = useState("Initial State")
 
   const changeState = () => {
@@ -8,7 +8,8 @@ const TestHook = (props) => {
   }
 
   const changeNameToSteve = () => {
-    props.changeName()
+    if (props.changeName)
+      props.changeName()
   }
 
   return (

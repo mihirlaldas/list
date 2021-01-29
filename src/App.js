@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import List from './components/List';
-import TestHook from './components/TestHook';
+import List from '../../list/src/components/List';
+import TestHook from '../../list/src/components/TestHook';
 import './App.css';
 
 function App() {
