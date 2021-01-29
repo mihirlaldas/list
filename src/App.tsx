@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import List from '../../list/src/components/List';
+import TestHook from '../../list/src/components/TestHook';
 import './App.css';
 
-function App(children: {children?: JSX.Element}) {
+function App() {
+  const [name, setName] = useState("Moe")
+  const changeName = () => {
+    setName("Steve")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-          {children?children:""}
-      </header>
-    </div>
+      <div className="App">
+        <h1>Basic list component</h1>
+        <List items={["apple","orange","banana"]}/>
+        <h1> Basic Hook useState </h1>
+        <TestHook name={name} changeName={changeName}/>
+      </div>
   );
 }
 
