@@ -1,7 +1,7 @@
 import React from 'react';
-import TestHook from '../TestHook';
+import TestHook from './TestHook';
 import {render, fireEvent, cleanup} from '@testing-library/react';
-import App from "../../App";
+import App from "../App";
 
 afterEach(cleanup)
 

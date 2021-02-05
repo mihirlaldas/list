@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ItemList from '../List';
+import ItemList from './List';
 
 // Test the case where the items provided is empty:
 //   <ItemList items={[]} />
