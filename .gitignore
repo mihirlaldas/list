@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 .idea/
 .eslintcache
+
+# stryker temp files
+.stryker-tmp
+reports/
+stryker.log

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import List from '../../list/src/components/List';
-import TestHook from '../../list/src/components/TestHook';
 import './App.css';
 import ComponentHttp from "./componentHttp";
+import List from "./components/List";
+import TestHook from "./components/TestHook";
 
 function App() {
   const [name, setName] = useState("Moe")
