@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import List from '../../list/src/components/List';
 import TestHook from '../../list/src/components/TestHook';
 import './App.css';
+import ComponentHttp from "./componentHttp";
 
 function App() {
   const [name, setName] = useState("Moe")
@@ -15,6 +16,9 @@ function App() {
         <List items={["apple","orange","banana"]}/>
         <h1> Basic Hook useState </h1>
         <TestHook name={name} changeName={changeName}/>
+        <br /><br /><br /><br /><br />
+        <h2>Http Component</h2>
+        <ComponentHttp />
       </div>
   );
 }
